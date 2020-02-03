@@ -9,6 +9,7 @@ RUN apk add --update --no-cache bash \
 				php7-intl \
 				php7-apache2 \
 				php7-sqlite3 \
+				php7-tokenizer \
 				php7-dba \
 				php7-opcache \
 				php7-fpm \
@@ -72,7 +73,7 @@ RUN apk add --update --no-cache bash \
 				apache2-utils
 RUN apk add --update --no-cache imagemagick-dev \
 				ffmpeg
-RUN curl -sS https://getcomposer.org/installer | php7
+RUN curl -sS https://getcomposer.org/installer | php7 -- --install-dir=/usr/bin --filename=composer
 
 RUN  rm -rf /var/cache/apk/*
 RUN mkdir /var/www/project/
