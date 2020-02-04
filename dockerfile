@@ -43,6 +43,7 @@ RUN apk add --update --no-cache bash \
 				php7-json \
 				php7-xml \
 				php7-xmlreader \
+				php7-xmlwriter \
 				php7-xmlrpc \
 				php7-iconv \
 				php7-sysvshm \
