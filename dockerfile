@@ -3,11 +3,13 @@ LABEL maintainer =  "Tiago R Conceição <tiracotech@gmail.com>"
 LABEL description = "Alpine based image with apache2 and php7.2"
 
 RUN apk add --update --no-cache bash \
+				nano \
 				curl \
 				curl-dev \
 				php7 \
 				php7-intl \
 				php7-apache2 \
+				php7-session \
 				php7-sqlite3 \
 				php7-tokenizer \
 				php7-dba \
